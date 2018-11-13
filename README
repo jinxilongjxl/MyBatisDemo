@@ -1,0 +1,28 @@
+什么是MyBatis
+
+MyBatis 是apache的一个开源项目iBatis, 2010年这个项目由apache software foundation 迁移到了google code，并且改名为MyBatis 。2013年11月迁移到Github。
+
+简单来说，MyBatis是一个实现了数据持久化的开源框架，支持三种语言的实现，Java，.NET以及Ruby。当然我们这里讲的是Java的使用，所以可以将MyBatis理解为一个JDBC的封装框架。
+
+我们知道Java开发经常使用到的另外一个JDBC封装框架是Hibernate，那么MyBatis和Hibernate之间有什么区别和共同点呢？
+
+MyBatis和Hibernate都是ORM框架。
+MyBatis是"半自动化"的ORM实现，这里的"半自动化"，是相对Hibernate提供了全面的数据库封装机制的"全自动化"ORM实现而言，"全自动"ORM实现了POJO和数据库表之间的映射，以及 SQL 的自动生成和执行。
+
+而MyBatis的关注点，在于POJO与SQL之间的映射关系。
+
+MyBatis 消除了几乎所有的 JDBC 代码和参数的手工设置以及对结果集的检索。 MyBatis可以使用简单的XML或注解用于配置和原始映射，通过接口将JavaBean映射成数据库中的记录。
+
+MyBatis的优点：
+1. 与JDBC相比，减少了50%以上的代码量。
+2. MyBatis是最简单的持久化框架，小巧并且简单易学。
+3. MyBatis相当灵活，不会对应用程序或者数据库的现有设计强加任何影响，SQL写在XML里，从程序代码中彻底分离，降低耦合度，便于统一管理和优化，并可重用。
+4. 提供XML标签，支持编写动态SQL语句。
+5. 提供映射标签，支持对象与数据库的ORM字段关系映射。
+
+MyBatis框架的缺点：
+1. SQL语句的编写工作量较大，尤其是字段多、关联表多时，更是如此，对开发人员编写SQL语句的功底有一定要求。
+2. SQL语句依赖于数据库，导致数据库移植性差，不能随意更换数据库。
+
+MyBatis框架适用场合：
+MyBatis专注于SQL本身，是一个足够灵活的DAO层解决方案。对性能的要求很高，或者需求变化较多的项目，如互联网项目，MyBatis将是不错的选择。
